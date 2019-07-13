@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <a href="{% url 'fib-create' %}">Cadastro Fibonnaci</a>
+    <br><br><br>
+<table>
+    <thead>
+    <tr>
+        <th>Número</th>
+        <th>Fibonnaci</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for number in object_list %}
+        <tr>
+            <td>{{ number.original_number }}</td>
+            <td>{{ number.fib_number }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
