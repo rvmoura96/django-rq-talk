@@ -5,7 +5,7 @@ Click==7.0
 Django==2.2.2
 django-rq==2.1.0
 pytz==2019.1
-redis==3.2.1
+redis==4.5.3
 rq==1.0
 sqlparse==0.3.0
 toml==0.10.0
